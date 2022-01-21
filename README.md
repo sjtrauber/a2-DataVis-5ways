@@ -1,16 +1,16 @@
-# 02-DataVis-7ways
+# 02-DataVis-5ways
 
-Assignment 2 - Data Visualization, 7 Ways  
+Assignment 2 - Data Visualization, 5 Ways  
 ===
 
-Now that you have successfully made a "visualization" of shapes and lines using d3, your next assignment is to successfully make a *actual visualization*... 7 times. 
+Now that you have successfully made a "visualization" of shapes and lines using d3, your next assignment is to successfully make a *actual visualization*... 5 times. 
 
 The goal of this project is to gain experience with as many data visualization libraries, languages, and tools as possible.
 
 I have provided a small dataset about cars, `cars-sample.csv`.
 Each row contains a car and several variables about it, including miles-per-gallon, manufacturer, and more.
 
-Your goal is to use 7 different tools to make the following chart:
+Your goal is to use 5 different tools to make the following chart:
 
 ![ggplot2](img/ggplot2.png)
 
@@ -29,19 +29,19 @@ Other features are not required. This includes:
 - The legends.
 
 Note that some software packages will make it **impossible** to perfectly preserve the above requirements. 
-Be sure to note where these deviate.
+Be sure to note where these do not support the features you need, but feel free to still use them.
 
-Improvements are also welcome as part of Technical and Design achievements.
+Improvements to the chart and design are also welcome as part of Technical and Design achievements.
 
 Libraries, Tools, Languages
 ---
 
-You are required to use 7 different tools or libraries.
-Of the 7 tools, you must use at least 3 libraries (libraries require code of some kind).
+You are required to use 5 different tools or libraries.
+Of the 5 tools, you must use at least 3 libraries (libraries require code of some kind).
 This could be `Python, R, Javascript`, or `Java, Javascript, Matlab` or any other combination.
 Dedicated tools (i.e. Excel) do not count towards the language requirement.
 
-Otherwise, you should seek tools and libraries to fill out your 7.
+Otherwise, you should seek tools and libraries like Excel, Tableau, or Flourish to fill out your 5.
 
 Below are a few ideas. Do not limit yourself to this list!
 Some may be difficult choices, like Matlab or SPSS, which require large installations, licenses, and occasionally difficult UIs.
@@ -52,13 +52,13 @@ I have marked a few that are strongly suggested.
 - Excel
 - d3 `<- since the rest of the class uses this, we're requiring it`
 - Matplotlib
-- three.js `<- well, it's a 3d library. not really recommended, but could be "interesting"`
-- p5js `<- good for playing around. not really a chart lib`
+- three.js `<- well, it's a 3d library. not really recommended, but could be interesting and fun`
+- p5js `<- good for playing around. not really a chart lib but great for art and animation`
 - Tableau
 - Java 2d
 - GNUplot
-- Vega-lite <- `<- recently much better. look for the high level js implementations`
-- Flourish <- `<- popular last year`
+- Vega-lite <- `<- very cool formal language for visualization. might be the future of the field.`
+- Flourish <- `<- popular in recent years`
 - PowerBI
 - SPSS
 
@@ -90,7 +90,7 @@ Other Requirements
 ---
 
 0. Your code should be forked from the GitHub repo.
-1. Place all code, Excel sheets, etcetera in a named folder. For example, `r-ggplot, matlab, mathematica, excel` and so on.
+1. Place available code, Excel sheets, etcetera in a named folder. For example, `r-ggplot, matlab, mathematica, excel` and so on.
 2. Your writeup (readme.md in the repo) should also contain the following:
 
 - Description of the Technical achievements you attempted with this visualization.
