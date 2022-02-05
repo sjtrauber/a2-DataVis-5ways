@@ -25,7 +25,7 @@ I still wanted to try some more libraries so I found lattice, while I still pref
 To expand my technical and design achievment, I wanted to explore the dataset and play with some more visualizations so I created some more interesting charts including a donut scatter plot, pie chart, and a heatmap.
 ![r_ggplot_play](img/r_ggplot_play.png)
 ![r_pie_play](img/r_pie_play.png)
-![r_pheatmap_play](img/r_pheatmap_play.png)
+![r_pheatmap_play](/img/r_pheatmap_play.png)
 
 I really enjoyed exploring all the extra options I had not been able to use previously with ggplot.
 
