@@ -25,10 +25,9 @@ I still wanted to try some more libraries so I found lattice, while I still pref
 To expand my technical and design achievment, I wanted to explore the dataset and play with some more visualizations so I created some more interesting charts including a donut scatter plot, pie chart, and a heatmap.
 ![r_ggplot_play](img/r_ggplot_play.png)
 ![r_pie_play](img/r_pie_play.png)
-![r_pheatmap_play](/img/r_pheatmap_play.png)
+![r_pheatmap_play](img/r_pheatmap_play.png)
 
 I really enjoyed exploring all the extra options I had not been able to use previously with ggplot.
-![test](/img/ggplot2.png)
 
 
 ## Python
@@ -47,4 +46,4 @@ Lastly, my code for d3 can be found in a2_chart.html.
 https://github.com/sjtrauber/a2-DataVis-5ways/blob/main/a2_chart.html
 
 My biggest challenge for plotting in d3 was understanding domain and range. It took me a lot of tweeking to understand what each do. As this is the newest language to me, I was very proud of every adjustment - however it did take the longest, by far. I started by using https://www.d3-graph-gallery.com/graph/scatter_basic.html as a template and adjusted as needed.
-![d3_chart](https://github.com/sjtrauber/a2-DataVis-5ways/blob/main/img/d3_chart.png)
+![d3_chart](img/d3_chart.png)
