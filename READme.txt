@@ -28,7 +28,7 @@ To expand my technical and design achievment, I wanted to explore the dataset an
 ![r_pheatmap_play](/img/r_pheatmap_play.png)
 
 I really enjoyed exploring all the extra options I had not been able to use previously with ggplot.
-![test](img/ggplot2.png)
+![test](/img/ggplot2.png)
 
 
 ## Python
