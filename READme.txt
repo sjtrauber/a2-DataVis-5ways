@@ -1,11 +1,12 @@
-# 02-DataVis-5ways
-Sarah J. Weintraub
-Assignment 2 - Data Visualization, 5 Ways  
+# Sarah J. Weintraub
+
+### 02-DataVis-5ways
+### Assignment 2 - Data Visualization, 5 Ways  
 ===
 
 For this project, I used R-ggplot, R-lattice, Python-matplotlib, Python-plotly, and d3 to create the charts based on the cars dataset. 
 
-# R
+## R
 The charts made in R can be found in an RMarkdown, r_charts.Rmd.
 https://github.com/sjtrauber/a2-DataVis-5ways/blob/main/r_charts.Rmd
 
@@ -30,7 +31,7 @@ I really enjoyed exploring all the extra options I had not been able to use prev
 
 
 
-# Python
+## Python
 For python, my code can be found in a Jupyter notebook, a2_chart.py.ipynb. 
 https://github.com/sjtrauber/a2-DataVis-5ways/blob/main/a2_chart.py.ipynb
 
@@ -41,9 +42,9 @@ Seeing that plotly was also available in Python, I was interested to see how it 
 ![py_plotly](img/py_plotly.png)
 
 
-# d3
+## d3
 Lastly, my code for d3 can be found in a2_chart.html.
 https://github.com/sjtrauber/a2-DataVis-5ways/blob/main/a2_chart.html
 
 My biggest challenge for plotting in d3 was understanding domain and range. It took me a lot of tweeking to understand what each do. As this is the newest language to me, I was very proud of every adjustment - however it did take the longest, by far. I started by using https://www.d3-graph-gallery.com/graph/scatter_basic.html as a template and adjusted as needed.
-![d3_chart](img/d3_chart.png)
+![d3_chart](https://github.com/sjtrauber/a2-DataVis-5ways/blob/main/img/d3_chart.png)
