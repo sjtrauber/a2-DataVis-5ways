@@ -1,0 +1,118 @@
+---
+title: "a2 chart"
+author: "Sarah J. Weintraub"
+date: "1/27/2022"
+output:
+  html_document:
+    df_print: paged
+  pdf_document: default
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(warning = FALSE, message = FALSE)
+library (readr)
+
+cars="https://raw.githubusercontent.com/cs573-22s/a2-DataVis-5ways/main/cars-sample.csv"
+cars<-read_csv(url(cars))
+
+```
+
+```{r message=FALSE, warning=FALSE}
+library(ggplot2)
+library(dplyr)
+
+p1 = ggplot(cars, aes(x=Weight, y=MPG, size = Weight, color = Manufacturer)) +
+  geom_point(alpha = 0.5); p1 
+
+# alpha adds transparency
+# size maps to variable
+# color based on variable
+
+## best library by far
+```
+
+```{r message=FALSE, warning=FALSE}
+library(plotly)
+
+p2 = plot_ly(data = cars, x = cars$Weight, y = cars$MPG, color = cars$Manufacturer, size = cars$Weight) ; p2
+
+
+## learned ~variable calls the same as dataset$variable ! Very cool.
+p2 = plot_ly(data = cars, x = ~Weight, y = ~MPG, size = ~Weight, color = ~Manufacturer, opacity = 0.5) ; p2
+
+p3 <- plot_ly(data = cars) %>% 
+  add_trace(x = ~Weight,
+            y = ~MPG,
+            mode = 'markers',
+            type = 'scatter',
+            color = ~Manufacturer,
+            marker = list(
+              opacity = 0.5,
+              showlegend=T),
+            size = ~Weight); p3
+
+## plotly will not allow two legends - sad
+
+```
+
+```{r message=FALSE, warning=FALSE}
+cex = data.frame(cars$Weight,cars$MPG)
+p4 = plot(cars$Weight, cars$MPG, col = factor(cars$Manufacturer), pch = 20) ; p4
+
+legend("topleft",
+       legend = levels(factor(cars$Manufacturer)),
+       pch = 19,
+       col = factor(levels(factor(cars$Manufacturer))))
+
+## really not a lot of flexibility - moving on
+```
+
+```{r}
+library(lattice)
+
+p5 = xyplot(cars$MPG ~ cars$Weight, group = cars$Manufacturer, alpha = 0.5, data = cars, auto.key = list(space="right"), cex = (cars$Weight*.00025), pch = 19, xlab = "Weight", ylab = "MPG") ; p5
+
+## good library, flexible, but just not as intuitive as ggplot
+```
+
+
+
+### misunderstood the assignment at first - so made some extra charts!
+
+## plotting with ggplot
+
+```{r cars, message=FALSE, warning=FALSE}
+
+library(ggplot2)
+library(dplyr)
+
+cars %>% ggplot() +
+  geom_point( aes(x=Weight, y=MPG ), shape = 21, colour = "black", 
+              fill = "white", size = 5, stroke = 5, alpha = 0.6 ) # alpha adds transparency
+  
+```
+## plotting pie charts with built-in R pie function
+
+```{r}
+mtcarscarb = table(cars$Origin)
+percentlabels<- round(100*mtcarscarb/sum(mtcarscarb), 1)
+pielabels<- paste(percentlabels, "%", sep="")
+pie(mtcarscarb,col = rainbow(length(mtcarscarb)), labels = pielabels , main = 'Pie Chart for Car Origin', cex = 0.8)
+
+# count frequency for labels
+sum(cars$Origin == "American", na.rm=TRUE) #53
+sum(cars$Origin == "Japanese", na.rm=TRUE) #39
+sum(cars$Origin == "European", na.rm=TRUE) #5
+
+# Legend for the pie chart
+legend("topright", c("American","European","Japanese"), cex=0.6, fill = rainbow(length(mtcarscarb)))
+```
+
+```{r}
+library(pheatmap)
+
+phtmap = pheatmap(scale(mtcars))
+
+```
+
