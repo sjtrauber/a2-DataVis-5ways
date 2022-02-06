@@ -1,8 +1,7 @@
-READme.txt
+# Sarah J. Weintraub
 
-# 02-DataVis-5ways
-Sarah J. Weintraub
-Assignment 2 - Data Visualization, 5 Ways  
+## 02-DataVis-5ways
+## Assignment 2 - Data Visualization, 5 Ways  
 ===
 
 For this project, I used R-ggplot, R-lattice, Python-matplotlib, Python-plotly, and d3 to create the charts based on the cars dataset. 
@@ -35,6 +34,7 @@ I really enjoyed exploring all the extra options I had not been able to use prev
 For python, my code can be found in a Jupyter notebook, a2_chart.py.ipynb. 
 
 I started with the matplotlib library and found it did have a lot of ability to tweek as needed. For my design achievment, instead of leaving the colors to default as I had done in all the R libraries, I chose to select my colors. This is something I have not done before but will almost definetly use again.
+
 ![py_matplotlib](https://user-images.githubusercontent.com/57506869/152661189-14d50f0b-648e-4c35-8452-6b7ff8f2dedd.png)
 
 Seeing that plotly was also available in Python, I was interested to see how it varied in Python compared to R. I actually preferred in over the R library, and preferred it over matplotlib which I was not expecting. The only thing I did not like about the library was the way it changed the axis ticks, but as soon as I found the documentation, it was easy to adjust to my liking.
